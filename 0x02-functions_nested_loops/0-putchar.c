@@ -7,13 +7,13 @@
 
 int main(void)
 {
-        char str[] = "_putchar";
-        int i;
+	char str[] = "_putchar";
+	int d;
 
-        for (i = 0; i < 8; i++)
-                _putchar(str[i]);
+	for (d = 0; d < 8; d++)
+		_putchar(str[d]);
 
-        _putchar('\n');
+	_putchar('\n');
 
-        return (0);
+	return (0);
 }
