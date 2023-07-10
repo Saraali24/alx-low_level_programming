@@ -3,7 +3,8 @@
 
 /**
  * create_array - function that creates an array of chars
- * @c: parameter is character 
+ *
+ * @c: parameter is character
  *
  * @size: parameter is integer
  *
@@ -17,13 +18,13 @@ char *p;
 unsigned int i;
 p = malloc(size * sizeof(char));
 if(size == 0)
-return NULL;
+return (NULL);
 else if (p == NULL)
-return NULL;
+return (NULL);
 for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
-return p;
-free p;
-}	
+return (p);
+free(p);
+}
