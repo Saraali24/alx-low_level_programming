@@ -16,13 +16,17 @@ char *_strdup(char *str)
 {
 char *str;
 char *_strdup;
+str = _strdup("ALX SE");
+char *copy = _strdup;
+*_strdup = malloc(str * sizeof(*str));
 if (str == NULL)
 {
 return (NULL);	
 }
-*_strdup = malloc( 2 * sizeof(*str));
-
-
+else
+{
+printf("%s\n", str);
+}
 return (NULL);
 free(str)
 }
