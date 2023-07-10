@@ -1,5 +1,4 @@
 #include <main.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -7,13 +6,17 @@
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
  *
- * Return: Nothing.
+ * Return: Always 0.
  */
 
 
-int main()
+char *create_array(unsigned int size, char c)
 {
+*char = c;
+unsigned int = size;
+if(size = 0)
+return NULL;
 
-	
+
 	return 0;
 }	
