@@ -11,10 +11,9 @@
  *
  * return: Returns NULL if str = NULL
  */
-
 char *_strdup(char *str)
 {
-char *newstr;
+	char *newstr;
 	unsigned int i, j;
 
 	if (str == NULL)
