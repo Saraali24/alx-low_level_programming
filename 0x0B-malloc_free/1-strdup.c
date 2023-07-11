@@ -5,9 +5,7 @@
 /**
  * _strdup - function which is a duplicate of the string
  *
- * @char: parameter is character
- *
- * @str: parameter is string
+ * @str: parameter is character
  *
  * return: Returns NULL if str = NULL
  */
