@@ -4,7 +4,7 @@
 
 /**
  * malloc_checked - function that allocates memory
- * 
+ *
  * @b: parameter is integer
  *
  * return : returns pointer to the allocated memory
@@ -19,7 +19,7 @@ ptr = malloc(b);
 
 if (ptr == NULL)
 
-exit(98);
+	exit(98);
 
 return (ptr);
 
