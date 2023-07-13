@@ -14,7 +14,6 @@
 void *malloc_checked(unsigned int b)
 {
 void *ptr;
-unsigned int b;
 
 ptr = malloc(b);
 
