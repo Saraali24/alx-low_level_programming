@@ -7,17 +7,22 @@
  * 
  * @b: parameter is integer
  *
- * @ptr: parameter is pointer
- *
  * return : returns pointer to the allocated memory
  */
+
+
 void *malloc_checked(unsigned int b)
 {
 void *ptr;
 unsigned int b;
+
 ptr = malloc(b);
+
 if (ptr == NULL)
+
 exit(98);
+
 return (ptr);
-}
+
 free(ptr);
+}
