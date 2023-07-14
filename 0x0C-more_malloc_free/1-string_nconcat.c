@@ -5,24 +5,23 @@
 
 
 /**
- * string_nconcat - function that concatenates two strings.
+ * string_nconcat - function that concatenates two strings
  *
- * @s1: parameter is character.
+ * @n: parameter is integer
  *
- * @s2: parameter is character.
+ * @s1: parameter is string
  *
- * @n: parameter is interger.
+ * @s2: parameter is string
  *
- * return: returns to a newly allocated space in memory.
+ * Return: returns pointer to a newly allocated space in memory
  */
-
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int len1, len2, len3, size, i, j;
 char *nstr;
 if (s1 == NULL)
-S = "";
+s1 = "";
 if (s2 == NULL)
 s2 = "";
 len1 = 0;
@@ -31,12 +30,12 @@ len1++;
 len2 = 0;
 while (s2[len2] != '\0')
 len2++;
-if (n >= len3)
+if (n >= len2)
 len3 = len2;
 else
 len3 = n;
 size = len1 + len3;
-nstr = malloc((size *sizeof(char)) + 1);
+nstr = malloc((sizeof(char) * size) +1);
 if (nstr == NULL)
 return (NULL);
 i = 0;
