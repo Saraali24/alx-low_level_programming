@@ -3,8 +3,13 @@
 #include <stdio.h>
 
 
-
-void dog(struct dog, char *name, float age, char *owner);
+struct dog
+{
+char *name;
+float age;
+char *owner;
+};
+void dog(struct dog *d, char *name, float age, char *owner);
 
 
 
