@@ -10,6 +10,8 @@
  *
  * @owner: parameter is character
  *
+ * @d: variable of structure
+ *
  * return: returns void
  */
 
