@@ -2,6 +2,14 @@
 #define DOG_H
 #include <stdio.h>
 
+/**
+ * struct dog - is a dog structure
+ * @name: first member is name
+ * @age: second member is age
+ * @owner: third member is owner
+ *
+ * Description: structure dog just alone dog struct in a big kitty world
+ */
 struct dog
 {
 char *name;
