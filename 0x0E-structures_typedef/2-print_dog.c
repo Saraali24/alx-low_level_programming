@@ -6,17 +6,18 @@
  *
  * @d: variable name of structure
  *
+ * return: return is void
  */
 
 void print_dog(struct dog *d)
 {
 if (d == NULL)
 return (NULL);
-if (d->name == NULL)
+if ((*d).name == NULL)
 printf("Name: (nil)\n");
 else
-printf("Name: %s", d->name);
-printf("\nAge: %f", d->age);
-printf("\nOwner: %s", d->owner);
+printf("Name: %s", (*d).name);
+printf("\nAge: %f", (*d).age);
+printf("\nOwner: %s", (*d).owner);
 
 }
