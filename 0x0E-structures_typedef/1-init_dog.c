@@ -22,5 +22,5 @@ if (d == NULL)
 return;
 (*d).name = name;
 (*d).age = age;
-(*d)owner = owner;
+(*d).owner = owner;
 }
