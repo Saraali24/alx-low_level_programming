@@ -5,7 +5,7 @@
 
 /**
  * array_iterator - function that executes a function given as a parameter
- * 
+ *
  * @array: parameter is integer
  *
  * @size: parameter is integer
@@ -17,5 +17,10 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-
+if (array && size && action)
+{
+int i;
+for (i = 0; i < size; i++)
+action(array[i]);
+}
 }
