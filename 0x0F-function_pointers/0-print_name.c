@@ -6,9 +6,11 @@
  * @name: parameter is character
  *
  * @f: parameter is pointer
+ *
+ * return: return function return void
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-f(name)
+f(name);
 }
