@@ -5,9 +5,9 @@
  *
  * @name: parameter is character
  *
- * @f: parameter is pointer
+ * @f: pointer to function
  *
- * return: return function return void
+ * return: function return void
  */
 
 void print_name(char *name, void (*f)(char *))
