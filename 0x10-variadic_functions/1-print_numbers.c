@@ -20,7 +20,7 @@ int i;
 for (i = 0; i < n; i++)
 {
 printf("%d\n", va_arg(countp, int));
-if (i < n - 1 && separator != NULL) 
+if (i < n - 1 && separator != NULL)
 {
 printf("%s", separator);
 }
