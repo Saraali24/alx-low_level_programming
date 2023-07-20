@@ -15,8 +15,8 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list countp;
+unsigned int i;
 va_start(countp, n);
-int i;
 for (i = 0; i < n; i++)
 {
 printf("%d\n", va_arg(countp, int));
