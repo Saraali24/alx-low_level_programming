@@ -1,11 +1,15 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-
-
-#include <stdarg.h>
-#include <stdio.h>
-
+#include <string.h>
+/**
+ * print_all - function that prints anything.
+ * @c: parameter is character
+ * @f: parameter is float
+ * @num: parameter is integer
+ * @str: parameter is string
+ * Return: returns void
+ */
 void print_all(const char * const format, ...)
 {va_list args;
 unsigned int i = 0;
