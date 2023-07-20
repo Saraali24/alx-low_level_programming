@@ -19,12 +19,12 @@ unsigned int i;
 va_start(countp, n);
 for (i = 0; i < n; i++)
 {
-printf("%d\n", va_arg(countp, int));
+printf("%d", va_arg(countp, unsigned int));
 if (i < n - 1 && separator != NULL)
 {
 printf("%s", separator);
 }
-
+}
 va_end(countp);
 printf("\n");
 }
