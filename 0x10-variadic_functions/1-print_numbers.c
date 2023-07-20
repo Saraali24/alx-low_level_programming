@@ -15,26 +15,16 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list countp;
-char c[] = "separator";
-if (!c)
-{
-
-}
 va_start(countp, n);
 int i;
 for (i = 0; i < n; i++)
 {
 printf("%d\n", va_arg(countp, int));
-if (!c)
+if (i < n - 1 && separator != NULL) 
 {
-return (0);
-}
-else
-{
-printf("%s\n", c);
-}
+printf("%s", separator);
 }
 
 va_end(countp);
-return (0);
+printf("\n");
 }
