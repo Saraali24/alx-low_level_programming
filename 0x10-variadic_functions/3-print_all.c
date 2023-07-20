@@ -7,8 +7,7 @@
 #include <stdio.h>
 
 void print_all(const char * const format, ...)
-{
-va_list args;
+{va_list args;
 unsigned int i = 0;
 char *str;
 char c;
@@ -16,10 +15,8 @@ int num;
 float f;
 va_start(args, format);
 while (format && format[i])
-{
-switch (format[i])
-{
-case 'c':
+{switch (format[i])
+{case 'c':
 c = va_arg(args, int);
 printf("%c", c);
 break;
@@ -34,23 +31,15 @@ break;
 case 's':
 str = va_arg(args, char *);
 if (str == NULL)
-{
-printf("(nil)");
-}
+{printf("(nil)");}
 else
-printf("%s", str);
-}
+{printf("%s", str);}
 break;
 default:
-break;
-}
+break;}
 if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' ||
 format[i] == 'f' || format[i] == 's'))
-{
-printf(", ");
-}
-i++;
-}
+{printf(", ");}
+i++;}
 va_end(args);
-printf("\n");
-}
+printf("\n");}
