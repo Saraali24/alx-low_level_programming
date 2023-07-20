@@ -7,12 +7,23 @@
  *
  * @n: parameter is integer
  *
- * Return: return always 0.
+ * Return: returns sum
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
+va_list countp;
 if (n == 0)
+{
 return (0);
-sum_them_all(n);
+}
+int sum = 0;
+unsigned int i;
+va_start(countp, n);
+for (i = 0; i < n; i++)
+{
+sum += va_arg(countp, unsigned int);
+}
+va_end(countp);
+return (sum);
 }
