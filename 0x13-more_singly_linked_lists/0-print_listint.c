@@ -5,7 +5,7 @@
 /**
  * print_listint - function that prints elements of list.
  *
- * @count: the number of elemnts.
+ * @num: the number of elemnts.
  *
  * @h: pointer to first node.
  *
@@ -15,13 +15,12 @@
 
 size_t print_listint(const listint_t *h)
 {
-size_t count;
-count = 0;
+size_t num = 0;
 while (h != 0)
 {
 printf("%d\n", h->n);
 h = h->next;
-count++;
+num++;
 }
-return (count);
+return (num);
 }
