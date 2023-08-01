@@ -5,8 +5,6 @@
 /**
  * print_listint - function that prints elements of list.
  *
- * @num: the number of elemnts.
- *
  * @h: pointer to first node.
  *
  * Return: returns the number of elemnts of list.
