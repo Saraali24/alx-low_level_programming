@@ -1,1 +1,3 @@
-0x18-dynamic_libraries
+Dynamic libraries
+
+>> command create object files --> > command create dynamic library [shared library] -->
